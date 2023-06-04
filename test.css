@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#screen {
+    width: 100%;
+    border: 2px solid black;
+}
+
+#nav {
+    width: 100%;
+    height: 80px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#logo {
+    width: 150px;
+    height: 90%;
+    border: 1px solid green;
+
+}
+
+#logo>div {
+    width: 100%;
+    height: 100%;
+}
+
+#logo>div>img {
+    width: 100%;
+    height: 100%;
+}
+
+#navi {
+    width: 40%;
+    height: 100%;
+    border: 1px solid green;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+#search{
+    width: 35%;
+    height: 100%;
+    border: 1px solid green;
+    /* justify-content: space-between; */
+}
+#search>div{
+    margin-bottom: 20px;
+}
+#Stop{
+    width: 100%;
+    height: 35%;
+    border: 1px solid blue;
+    display: flex;
+    justify-content: space-around;
+}
+#Stop>div:nth-child(1){
+    width: 30%;
+    border: 1px solid red;
+    text-align: center;
+}
+#Stop>div:nth-child(2){
+    width: 30%;
+    border: 1px solid red;
+    text-align: center;
+}
+#Stop>div:nth-child(3){
+    width: 30%;
+    border: 1px solid red;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+#Stop>div:nth-child(1)>span:hover{
+    border-bottom:1px solid rgb(43,64,82);
+}
+#Stop>div:nth-child(2)>span:hover{
+    border-bottom:1px solid rgb(43,64,82);
+}
+#Stop>div:nth-child(3)>span:hover{
+    border-bottom: 1px solid white;
+}
+span{
+    font-size: 12px;
+}
+#Sbottom{
+    width: 100%;
+    height: 40%;
+    border: 1px solid blue;
+    display: flex;
+    justify-content: space-around;
+}
+#Sbottom>div:nth-child(1){
+    width: 60%;
+    border: 1px solid red;
+    border-radius: 50px;
+    background-color: rgb(255,253,237);
+}
+#Sbottom>div:nth-child(1)>input{
+    width: 200px;
+    border: none;
+    outline:none;
+    padding-left: 20px;
+    padding-top: 7px;
+    /* border-radius: 10px; */
+    
+}
+#Sbottom>div:nth-child(1)>i{
+    padding-left: 30px;
+    color: rgb(175, 174, 172);
+}
+#Sbottom>div:nth-child(2){
+    width: 30%;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-around;
+}
+#Sbottom>div:nth-child(2)>div{
+    width: 30%;
+    border: 1px solid blue;
+    background-color: rgb(43,64,82);
+    border-radius: 100%;
+}
+#Sbottom>div:nth-child(2)>div>i{
+    padding: 5px 10px ;
+    color: white;
+}
+#body {
+    width: 100%;
+    border: 1px solid red;
+}
