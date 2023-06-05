@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Register</title>
     <style>
         * {
             margin: 0;
@@ -15,51 +15,73 @@
 
         #screen {
             width: 100%;
-            border: 2px solid black;
+            /* border: 2px solid black; */
         }
 
         #body {
             width: 100%;
-            border: 1px solid red;
+            /* border: 1px solid red; */
 
         }
 
-        #login {
+        #register {
             width: 40%;
-            border: 1px solid blue;
+            /* border: 1px solid blue; */
             margin: auto;
             margin-top: 100px;
-            
+
         }
 
-        #login>div:nth-child(1) {
+        #register>div:nth-child(1) {
             width: 100%;
             height: 90px;
             /* border: 1px solid red; */
             margin-top: 10px;
             padding-top: 50px;
-            padding-left: 20px;
+            padding-left: 25px;
             margin-bottom: 10px;
         }
 
-        /* #login>div:nth-child(1)>h4{
+        /* #register>div:nth-child(1)>h4{
             heigth:;
         } */
-        #login>div:nth-child(2)>span{
-            padding-left: 20px;
+        #register>div:nth-child(2)>span {
+            padding-left: 25px;
             margin-top: 10px;
         }
 
-        #login>div:nth-child(2)>div:nth-child(2) {
+        #info {
+            /* margin-left: 25px;
+            margin-top: 10px; */
+            margin: 20px 25px 20px 25px;
+        }
+
+        .name {
+            width: 60%;
+            height: 40px;
+            /* border:1px solid red; */
+            /* display: flex; */
+            margin-bottom: 20px;
+        }
+
+        .name>input {
+            width: 250px;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid black;
+        
+        }
+ 
+        /* #register>div:nth-child(2)>div:nth-child(2) {
             width: 100%;
-            /* border: 1px solid red; */
+            border: 1px solid red;
             display: flex;
             justify-content: space-around;
             margin-bottom: 10px;
-            
+
         }
 
-        #login>div:nth-child(2)>div:nth-child(2)>div:nth-child(1) {
+        #register>div:nth-child(2)>div:nth-child(2)>div:nth-child(1) {
             width: 20%;
             height: 40%;
             border: 2px solid blue;
@@ -67,12 +89,9 @@
 
         }
 
-        img {
-            width: 100%;
-            height: 100%;
-        }
+        
 
-        #login>div:nth-child(2)>div:nth-child(2)>div:nth-child(2) {
+        #register>div:nth-child(2)>div:nth-child(2)>div:nth-child(2) {
             width: 20%;
             height: 90%;
             border: 2px solid red;
@@ -80,21 +99,22 @@
 
 
         }
-        #login>div:nth-child(3){
+
+        #register>div:nth-child(3) {
             text-align: center;
             margin-bottom: 10px;
-        }
+        } */
 
-        #login>div:nth-child(4) {
+        /* #register>div:nth-child(4) {
             width: 90%;
             height: 40%;
             margin-bottom: 10px;
             padding-left: 20px;
 
-            /* border: 1px solid red; */
-        }
+            border: 1px solid red;
+        }  */
 
-        #login>div:nth-child(4)>input {
+        #register>div:nth-child(4)>input {
             width: 250px;
             border: none;
             outline: none;
@@ -107,8 +127,8 @@
             background-color: rgb(213, 162, 73);
             margin: auto;
             margin-bottom: 20px;
-            
-            
+
+
         }
 
         #btn {
@@ -119,7 +139,7 @@
             margin-top: 15px;
             color: white;
             background-color: rgb(213, 162, 73);
-            
+
         }
     </style>
 </head>
@@ -127,34 +147,38 @@
 <body>
     <div id="screen">
         <div id="body">
-            <div id="login">
+            <div id="register">
                 <div>
                     <h4>Welcome To AJIO</h4>
                 </div>
                 <div>
-                    <span>Join / Sign In Using </span>
-                    <div>
-                        <div>
-                            <img src="./download.png" />
-                        </div>
-                        <div>
-                            <img src="./google-logo-png-google-sva-scholarship-20.png" />
+                    <span>Sign Up </span>
+                </div>
 
-                        </div>
+                <div id="info">
+                    <div class="name">
+                        <label>Enter Mobile Number Or Mail</label><br>
+                        <input type="text">
                     </div>
-                </div>
-                <div>
-                    -----------OR----------------
-                </div>
-                <div>
-                    <label>Enter Mobile Number Or Mail</label><br>
-                    <input type="text">
+                    <div class="name">
+                        <label>Enter Mail</label><br>
+                        <input type="text" placeholder="e.g.,xyyz@dmj.com">
+                    </div>
+                    <div class="name">
+                        <label>Enter Password</label><br>
+                        <input type="password" >
+                    </div>
+                    <div class="name">
+                        <label>Enter Confirm Password</label><br>
+                        <input type="password" >
+                    </div>
                 </div>
                 <div>
                     <div id="continue">
                         <button id="btn">CONTINUE</button>
                     </div>
-                    <h5></h1>
+                    <h5>
+                        </h1>
                 </div>
             </div>
         </div>
